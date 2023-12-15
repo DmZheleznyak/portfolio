@@ -1,0 +1,11 @@
+.header {
+    margin-top: 1em;
+    height: 9em;
+    background-color: white;
+    border-bottom: 1px black solid;
+}
+
+.logo {
+    width: 8em;
+    height: 8em;    
+}

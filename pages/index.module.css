@@ -1,0 +1,333 @@
+.mainInfo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.mainPicture {
+    width: 35em;
+    height: 35em;
+    border-radius: 20px;
+}
+
+.mainInfoArticle {
+    margin-top: 6px;
+}
+
+.mainInfoArticleText {
+    font-size: 3em;
+    margin-top: 16px;
+    line-height: 1.3em;
+}
+
+.listOfInformation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    column-gap: 5%;
+    row-gap: 10px;  
+}
+
+.listOfInformation article {
+    width: 30%;
+    border-bottom: 1px #d1d1e1 solid;
+    border-right: 1px #d1d1e1 solid;
+    border-radius: 4px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.listOfInformation article:hover {
+    border: 1px black solid;
+}
+
+.listOfSkills {
+    font-size: 2.6em;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.skills {
+    margin-top: 12px;
+    cursor: default;
+}
+
+.iconsSkills {
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    transition: opacity 1.3s;
+    float: right;
+}
+
+.skills:hover .iconsSkills {
+    opacity: 1;
+    transition: opacity 0.8s;
+    margin-top: -1px;
+}
+
+.yearsOfEducation  {
+    font-size: 2em;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: -6px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.listOfInformation article p {
+    font-size: 2.6em;
+    margin-top: 8px;
+    line-height: 1.35em;
+    text-indent: 30px;
+    
+}
+
+.textAboutMe {
+    font-size: 2.6em;
+    margin-top: 8px;
+    line-height: 1.35em;
+    text-indent: 30px;   
+    animation-duration: 3s;
+    animation-name: appearenceTextAboutMe;
+}
+
+@keyframes appearenceTextAboutMe {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.textOfInformation {
+    animation-duration: 2s;
+    animation-name: appearencetextOfInformation;
+}
+
+@keyframes appearencetextOfInformation {
+    from {
+        margin-left: 100%;
+        margin-bottom: 100%;
+        width: 500%;
+    }
+
+    85% {
+        margin-left: -4%;
+        margin-bottom: -4%;
+        width: 80%;
+    }
+    to {
+        margin-left: 0%; 
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+.listOfProjects {
+    font-size: 2.6em;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* 
+li:before {
+    content: "■";
+    display: inline-block;
+    font-size: 10px;
+    margin-left: -14px; */
+
+.itemOfProjects {
+    margin-top: 8px;
+    display: flex;
+} 
+/* 
+.hiddenIconProjects {
+    opacity: 0;
+    display: none;
+}
+
+.animationIconsCarProjects {
+    display: block;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-name: animationIconsCarProjects;
+}
+
+@keyframes animationIconsCarProjects {
+    from {
+        margin-left: -5px;
+    }
+    10% {
+        opacity: 1;
+    }
+    to {
+        margin-left: 40%;
+        opacity: 0;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 2px
+    }
+}
+
+.animationIconsSpaceProjects {
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+    animation-duration: 4s;
+    position: absolute;
+    animation-name: animationIconsSpaceProject;
+    z-index: 10; 
+}
+
+@keyframes animationIconsSpaceProject {
+    from {
+        margin-left: 10%;
+    }
+    10% {
+        opacity: 1;
+    }
+    to {
+        margin-left: 39%;
+        margin-top: -39%;
+        opacity: 0;
+    }
+} */
+
+.linkToProjects {
+    float: right;
+    font-size: 2.6em;
+}
+
+.listOfLanguage {
+    font-size: 2.6em;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 1.45em;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1300px) {
+    .listOfInformation {
+        justify-content: space-around;
+        margin-top: 16px;
+        column-gap: 0%;
+        row-gap: 10px;  
+    }
+
+    .listOfInformation article {
+        width: 40%;
+        border: 1px #d1d1e1 solid;
+        border-radius: 4px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .linkToProjects {
+        float: left;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .listOfInformation { 
+        justify-content: space-evenly;
+    }
+
+    .listOfInformation article {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mainInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainInfoArticle {
+        margin-top: 36px;
+        text-align: center;
+    }
+
+    .mainInfoArticleText {
+        font-size: 2.5em;
+    }
+
+    .listOfSkills {
+        font-size: 2.2em;
+    }
+
+    .skills:hover .iconsSkills {
+        opacity: 0;
+    }
+
+    .listOfInformation article p {
+        font-size: 2.2em;
+        margin-top: 6px;
+        line-height: 1.3em;
+        text-indent: 25px;
+        
+    }
+
+    .textAboutMe {
+        font-size: 2.2em;
+        line-height: 1.3em;
+        text-indent: 25px;
+    }
+
+    .listOfProjects {
+        font-size: 2.2em;
+    }
+
+    .linkToProjects {
+        font-size: 2.2em;
+        margin-top: 8%;
+    }
+
+    .listOfLanguage {
+        font-size: 2.2em;
+        line-height: 1.3em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .listOfInformation article {
+        width: 70%;
+        border: none;
+        border-bottom: 1px #d1d1e1 solid;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .listOfSkills {
+        display: flex;
+    }
+
+    .linkToProjects {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .listOfSkills {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .mainPicture {
+        width: 30em;
+        height: 30em;
+    }
+}

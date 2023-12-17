@@ -1,0 +1,114 @@
+.projectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectArticle {
+    width: 50%;
+    text-align: left;
+    border-bottom: 1px #d1d1e1 solid;
+    border-right: 1px #d1d1e1 solid;
+    border-radius: 4px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.technologies {
+    margin-top: 10px;
+}
+
+.listOfTechnologies {
+    font-size: 2.6em;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.projectArticle p {
+    font-size: 2.6em;
+    margin: 16px;
+}
+
+.projectArticle a {
+    font-size: 2.6em;
+}
+
+.linkToHome {
+    font-size: 3em;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .projectArticle {
+        width: 60%;
+        padding: 38px;
+        margin: 38px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .projectArticle {
+        width: 70%;
+        padding: 32px;
+        margin: 32px;
+    }
+
+    .projectArticle p {
+        font-size: 2.5em;
+        margin: 12px;
+    }
+    
+    .projectArticle a {
+        font-size: 2.5em;
+    }
+    
+    .linkToHome {
+        font-size: 2.8em;
+        margin: 18px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .projectArticle {
+        width: 80%;
+        padding: 26px;
+        margin: 26px;
+    }
+
+    .projectArticle p {
+        font-size: 2.4em;
+        margin: 10px;
+    }
+    
+    .projectArticle a {
+        font-size: 2.4em;
+    }
+    
+    .linkToHome {
+        font-size: 2.7em;
+        margin: 16px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .projectArticle {
+        width: 90%;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .projectArticle p {
+        font-size: 2.2em;
+        margin: 8px;
+    }
+    
+    .projectArticle a {
+        font-size: 2.2em;
+    }
+    
+    .linkToHome {
+        font-size: 2.5em;
+        margin: 16px;
+    }
+}

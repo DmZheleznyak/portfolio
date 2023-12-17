@@ -344,9 +344,9 @@ li:before {
     }
 }
 
-@media screen and (max-width: 490px) {
-    .mainPicture {
-        width: 30em;
-        height: 30em;
+    @media screen and (max-width: 490px) {
+        .mainPicture {
+            width: 30em;
+            height: 30em;
+        }
     }
-}

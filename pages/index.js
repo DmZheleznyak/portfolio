@@ -51,8 +51,6 @@ const ListOfSkills = data.skills.map(skill => {
 })
 
 // to show element during scroll
-
-
 export default function Home() {
     const [refAboutMe, inViewAboutMe, entryAboutMe] = useInView({
         /* Optional options */

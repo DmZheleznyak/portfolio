@@ -303,7 +303,7 @@ li:before {
 @media screen and (max-width: 850px) {
 
     .listOfInformation article {
-        width: 70%;
+        width: 75%;
         border: none;
         border-bottom: 1px #d1d1e1 solid;
         padding: 20px;
@@ -322,6 +322,25 @@ li:before {
 @media screen and (max-width: 590px) {
     .listOfSkills {
         display: block;
+    }
+
+    .education {
+        opacity: 0;
+        margin-left: 25%;
+    }
+
+    .showEducation {
+        margin-left: 0%;
+        transition: margin-left 2s ease;
+    }
+
+    .aboutMe {
+        opacity: 0;
+    }
+
+    .showAboutMe {
+        opacity: 1;
+        transition: opacity 2s ease;
     }
 }
 

@@ -20,25 +20,33 @@ export const data = {
             name: 'Stars collection',
             link: 'https://dmzheleznyak.github.io/themoviedbAPI/',
             icon: iconStar,
-            animationIcon: iconMovingStar
+            animationIcon: iconMovingStar,
+            technologies: ['React', 'Redux', 'Redux-saga', 'Material UI'],
+            discription: 'Application helps to find information about movie with Api themoviedb.org You can safe movie to list of favourite and even remove from that.'   
         },
         {
             name: 'Car service',
             link: 'https://dmzheleznyak.github.io/cool-hoz',
             icon:iconCarService,
-            animationIcon: iconCarServiceColor
+            animationIcon: iconCarServiceColor,
+            technologies: [ 'Html', 'Scss', 'Javascript', 'Gulp' ],
+            discription: 'This site for the presentation firm. You can see the popup, the gallery for examples, using API Google Map for helping finding their address. Semantics and adaptability are available.'
         },
         {
             name: 'Free layout',
             link: 'https://dmzheleznyak.github.io/where/',
             icon: iconLayout,
-            animationIcon: iconLayout
+            animationIcon: iconLayout,
+            technologies: ['Html', 'Scss'],
+            discription: 'This is a simple layout. Semantics and adaptability are available.'
         },
         {
             name: 'Space Tourism',
             link: 'https://main.d33qe7k5ddbu3o.amplifyapp.com',
             icon: iconSpaceTourism,
-            animationIcon: iconSpaceTourismColor
+            animationIcon: iconSpaceTourismColor,
+            technologies: ['React', 'Css'],
+            discription: 'It is the single page application for the presentation information about firm. Semantics and adaptability are available.'
         }
     ],
     skills: [

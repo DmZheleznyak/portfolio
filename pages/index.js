@@ -6,6 +6,8 @@ import mainPicture from '../public/images/Zhelezniak_Dmitriy.jpg';
 import styles from './index.module.css';
 import {data} from '../data/data';
 
+import { useInView } from 'react-intersection-observer';
+
 // это позже
 // const moveToLinkProject = (e) => {
 //     console.log(e.target.textContent, 'textContent');
@@ -48,7 +50,20 @@ const ListOfSkills = data.skills.map(skill => {
     </li>
 })
 
+// to show element during scroll
+
+
 export default function Home() {
+    const [refAboutMe, inViewAboutMe, entryAboutMe] = useInView({
+        /* Optional options */
+        threshold: 0,
+    });
+
+    const [refEducation, inViewEducation, entryEducation] = useInView({
+        /* Optional options */
+        threshold: 0,
+    })
+
     return (
         <Layout>
             <Head>
@@ -78,7 +93,8 @@ export default function Home() {
                         <h3>Skills:</h3>
                         <ul className={styles.listOfSkills}>{ ListOfSkills }</ul>
                     </article>
-                    <article>
+                    <article 
+                        className={ inViewEducation ? styles.showEducation : styles.education }  ref={refEducation}>
                         <h3>Education:</h3>
                         <div className={styles.yearsOfEducation}>2008 - 2013</div>
                         <p className={styles.textOfInformation}>
@@ -89,13 +105,14 @@ export default function Home() {
                         “A - Level” (IT school) - “Front-End”
                         </p>
                     </article>
-                    <article>
-                    <h3>About me:</h3>
-                    <p className={styles.textAboutMe}>I had studied in the school “A-Level”, in which I had taken basic knowledge of this technologies: 
-                    HTML, CSS, Javascrip, Bootstrap, React, Git.<br />
-                    Additionally recieved skills on the platform “Udemy”, main accent was on the React library.
-                    I had internship during mounth in the company “CHI Software” - markup, deep learning Javascript.<br />
-                    I’m interesting in position trainee, because I haven’t expirience in commercial projects.</p>                       
+                    <article 
+                        className={ inViewAboutMe ? styles.showAboutMe : styles.aboutMe }  ref={refAboutMe}>
+                        <h3>About me:</h3>
+                        <p className={styles.textAboutMe}>I had studied in the school “A-Level”, in which I had taken basic knowledge of this technologies: 
+                        HTML, CSS, Javascrip, Bootstrap, React, Git.<br />
+                        Additionally recieved skills on the platform “Udemy”, main accent was on the React library.
+                        I had internship during mounth in the company “CHI Software” - markup, deep learning Javascript.<br />
+                        I’m interesting in position trainee, because I haven’t expirience in commercial projects.</p>                       
                     </article>
                     <article>
                         <h3>Projects:</h3>

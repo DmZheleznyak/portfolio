@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from './layout.module.css';
-// import Header from './header';
 
 export const siteTitle = 'Zhelezniak Dmitriy';
 
@@ -11,8 +10,14 @@ export default function Layout({ children }) {
                 <meta 
                     charset="UTF-8" 
                     name="viewport" 
-                    content="width=device-width" />
+                    content="width=device-width" 
+                />
                 <title>{siteTitle}</title>
+                <link
+                    rel="icon"
+                    href="./flavicon/BxDiamond.svg"
+                    type="image/png"
+                />
                 
             </Head>
             {/* <Header /> */}

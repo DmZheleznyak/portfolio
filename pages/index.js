@@ -8,50 +8,9 @@ import {data} from '../data/data';
 
 import { useInView } from 'react-intersection-observer';
 
-// это позже
-// const moveToLinkProject = (e) => {
-//     console.log(e.target.textContent, 'textContent');
-//     console.log(e.target, ' e target');
-
-//     // console.log(node.e.target, 'node e target');
-// }
-
-const ListOfProjects = data.projects.map(project => {
-    return (
-        <li className={styles.itemOfProjects} key={project.name}>
-            <a href={project.link}>{project.name}</a>
-            {/* <Image 
-                priority
-                src={project.animationIcon}
-                alt='animation icon skill' 
-                // className={styles.iconsProjects}
-                className={  
-                    `${styles.hiddenIconProjects}
-                    `
-                    // add this class when function go to link with animation
-                    // ${styles.animationIconsCarProjects}
-                    // ${styles.animationIconsSpaceProjects}
-                }
-            /> */}
-        </li>
-    )
-})
-
-// при переходе по ссылке запустить небольшую анимация связанную с темой проекта
-
-const ListOfSkills = data.skills.map(skill => {
-    return <li className={styles.skills} key={skill.name} >{skill.name} 
-        <Image 
-            priority
-            src={skill.icon}
-            alt='icon skill' 
-            className={styles.iconsSkills}
-        />
-    </li>
-})
-
-// to show element during scroll
 export default function Home() {
+
+    // to show element during scroll
     const [refAboutMe, inViewAboutMe, entryAboutMe] = useInView({
         /* Optional options */
         threshold: 0,
@@ -61,6 +20,25 @@ export default function Home() {
         /* Optional options */
         threshold: 0,
     })
+
+    const ListOfProjects = data.projects.map(project => {
+            return (
+                <li className={styles.itemOfProjects} key={project.name}>
+                    <a href={project.link}>{project.name}</a>                           
+                </li>
+            )
+        })
+
+    const ListOfSkills = data.skills.map(skill => {
+        return <li className={styles.skills} key={skill.name} >{skill.name} 
+            <Image 
+                priority
+                src={skill.icon}
+                alt='icon skill' 
+                className={styles.iconsSkills}
+            />
+        </li>
+    })  
 
     return (
         <Layout>

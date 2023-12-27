@@ -135,71 +135,10 @@
     padding-left: 0;
 }
 
-/* 
-li:before {
-    content: "■";
-    display: inline-block;
-    font-size: 10px;
-    margin-left: -14px; */
-
 .itemOfProjects {
     margin-top: 8px;
     display: flex;
-} 
-/* 
-.hiddenIconProjects {
-    opacity: 0;
-    display: none;
 }
-
-.animationIconsCarProjects {
-    display: block;
-    width: 30px;
-    height: 30px;
-    opacity: 0;
-    animation-duration: 2s;
-    animation-name: animationIconsCarProjects;
-}
-
-@keyframes animationIconsCarProjects {
-    from {
-        margin-left: -5px;
-    }
-    10% {
-        opacity: 1;
-    }
-    to {
-        margin-left: 40%;
-        opacity: 0;
-        width: 35px;
-        height: 35px;
-        margin-bottom: 2px
-    }
-}
-
-.animationIconsSpaceProjects {
-    width: 30px;
-    height: 30px;
-    opacity: 0.3;
-    animation-duration: 4s;
-    position: absolute;
-    animation-name: animationIconsSpaceProject;
-    z-index: 10; 
-}
-
-@keyframes animationIconsSpaceProject {
-    from {
-        margin-left: 10%;
-    }
-    10% {
-        opacity: 1;
-    }
-    to {
-        margin-left: 39%;
-        margin-top: -39%;
-        opacity: 0;
-    }
-} */
 
 .linkToProjects {
     float: right;
@@ -214,7 +153,7 @@ li:before {
     line-height: 1.45em;
 }
 
-/* Tablet */
+/* Tablet screen */
 
 @media screen and (max-width: 1300px) {
     .listOfInformation {
@@ -318,6 +257,8 @@ li:before {
         margin-top: 2%;
     }
 }
+
+/* Mobile screen */
 
 @media screen and (max-width: 590px) {
     .listOfSkills {

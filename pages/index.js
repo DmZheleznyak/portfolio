@@ -55,7 +55,7 @@ export default function Home() {
                      />
                     <article className={styles.mainInfoArticle}>
                         <h1>Zhelezniak Dmitriy</h1>
-                        <h2>Front-End Developer</h2>
+                        <h2 className='textAnimation'>Front-End Developer</h2>
                         <p className={styles.mainInfoArticleText}>
                             Budapest, Hungary<br />
                             +36 20 3416334<br />

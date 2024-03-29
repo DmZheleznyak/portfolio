@@ -74,7 +74,7 @@ export default function Home() {
                         <h3>Education:</h3>
                         <div className={styles.yearsOfEducation}>2008 - 2013</div>
                         <p className={styles.textOfInformation}>
-                        Kharkov Polytechnic Institute - “Management organization and personnel administration”
+                        Kharkiv Polytechnic Institute - “Management organization and administration”
                         </p>
                         <div className={styles.yearsOfEducation}>2018</div>
                         <p className={styles.textOfInformation}>

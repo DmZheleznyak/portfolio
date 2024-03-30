@@ -39,7 +39,8 @@
 }
 
 .listOfInformation article:hover {
-    border: 1px black solid;
+    /* border: 1px black solid; */
+    border: 1px #d1d1e1 solid;
 }
 
 .listOfSkills {

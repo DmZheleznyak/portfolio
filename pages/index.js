@@ -5,6 +5,7 @@ import Link from 'next/link';
 import mainPicture from '../public/images/Zhelezniak_Dmitriy.jpg';
 import styles from './index.module.css';
 import {data} from '../data/data';
+import { useState } from 'react';
 
 import { useInView } from 'react-intersection-observer';
 
@@ -20,6 +21,10 @@ export default function Home() {
         /* Optional options */
         threshold: 0,
     })
+
+    // to show photo
+    const [showPhoto, setShowPhoto] = useState(false);
+    const functionShowPhoto = () => setShowPhoto(!showPhoto);
 
     const ListOfProjects = data.projects.map(project => {
             return (
@@ -47,12 +52,20 @@ export default function Home() {
             </Head>
             <section>
                 <div className={styles.mainInfo}>
-                    <Image
+                     <Image
                         priority
                         src={mainPicture}
                         alt='My photo'
-                        className={styles.mainPicture}
-                     />
+                        className={showPhoto ? styles.mainPictureShow : styles.mainPictureDontShow}
+                     /> 
+                    <div
+                        className={showPhoto ? styles.containerButtonMainPictureDontShow : styles.containerButtonMainPictureShow}>
+                        <button 
+                            className={styles.buttonMainPicture}
+                            onClick={functionShowPhoto}>
+                                Show Photo
+                        </button>    
+                    </div> 
                     <article className={styles.mainInfoArticle}>
                         <h1>Zhelezniak Dmitriy</h1>
                         <h2 className='textAnimation'>Front-End Developer</h2>

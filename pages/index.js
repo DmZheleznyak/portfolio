@@ -70,10 +70,10 @@ export default function Home() {
                         <h1>Zhelezniak Dmitriy</h1>
                         <h2 className='textAnimation'>Front-End Developer</h2>
                         <p className={styles.mainInfoArticleText}>
-                            Budapest, Hungary<br />
-                            +36 20 3416334<br />
+                            Stalham, United Kingdom<br />
+                            +44 73 59992850<br />
                             zheleznjak.dm@gmail.com<br />
-                            <a href='https://github.com/DmZheleznyak'>https://github.com/DmZheleznyak</a>   
+                            {/* <a href='https://github.com/DmZheleznyak'>https://github.com/DmZheleznyak</a>    */}
                         </p>
                     </article>
                 </div>
@@ -113,7 +113,7 @@ export default function Home() {
                         <ul className={styles.listOfLanguage}>  
                             <li>Russian</li>
                             <li>Ukraine</li>
-                            <li>English (speaking, reading documentation with dictonary)</li>
+                            <li>English (B1)</li>
                         </ul>
                     </article>
                 </div>
